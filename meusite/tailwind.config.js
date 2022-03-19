@@ -6,8 +6,8 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ['Anonymous Pro', 'monospace'],
-      heading: ['Anonymous Pro', 'monospace'],
+      sans: ['DM Sans', 'sans-serif'],
+      heading: ['DM Sans', 'sans-serif'],
     },
     extend: {
       colors: {
@@ -15,6 +15,10 @@ module.exports = {
       },
       boxShadow: {
         '3xl': '0 8px 15px rgba(50, 50, 50, 0.7)',
+      },
+      backgroundSize: {
+        'underline': '2em',
+        'underlineHover': '100%',
       }
     },
   },

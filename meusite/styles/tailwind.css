@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,5 +11,18 @@
 @layer base {
   body {
     @apply bg-gray-100
+  }
+}
+@layer utilities {
+  .bg-growing-underline {
+    background-size: 0 0.1em;
+    background-position: 100% 88%;
+    @apply bg-no-repeat transition-all duration-700;
+  }
+  .bg-growing-underline:hover {
+    background-size: 100% 0.1em;
+  }
+  .bg-growing-underline:focus {
+    background-size: 100% 0.1em;
   }
 }
