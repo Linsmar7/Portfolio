@@ -20,11 +20,9 @@ const socials = [
     },
 ]
 
-console.log(socials[0].link)
-
 export default function Header() {
   return (
-    <div className='flex flex-col lg:flex-row lg:gap-0 lg:mt-60 justify-center items-center mt-44 gap-y-8'>
+    <section className='flex flex-col lg:flex-row lg:gap-0 lg:mt-60 justify-center items-center mt-44 gap-y-8'>
         <Avatar round={true} src={LinsmarPicture.src} name='Linsmar Vital' size='300'/>
         <div className='lg:w-1/4 lg:items-stretch lg:ml-28 flex flex-col items-center gap-y-4'>
             <h1 className='font-bold text-5xl'><span className='text-purple-300'>LINSMAR</span> VITAL</h1>
@@ -39,6 +37,6 @@ export default function Header() {
                 ))}
             </div>
         </div>
-    </div>
+    </section>
   )
 }

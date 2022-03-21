@@ -12,10 +12,10 @@ export default function Home() {
     else setMobile('-translate-x-full')
   }
   return (
-    <>
+    <main>
       <Navbar open={mobile} />
       <HamburgerIcon onClick={() => changeMobileHook()} />
       <Header />
-    </>
+    </main>
   )
 }
