@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Link as ScrollLink, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-import { BsPerson, BsTelephone, BsKeyboard, BsCodeSlash, BsMusicNoteBeamed } from 'react-icons/bs'
+import { BsPerson, BsTelephone, BsKeyboard, BsCodeSlash, BsMusicNoteBeamed, BsBriefcase } from 'react-icons/bs'
 
 const navigation = [
     {
@@ -10,14 +10,19 @@ const navigation = [
         icon: <BsPerson size='1.2em' color=''/>,
     },
     {
+        name: 'Skills',
+        href: '',
+        icon: <BsCodeSlash size='1.2em' color=''/>,
+    },
+    {
         name: 'Experiência',
         href: '',
         icon: <BsKeyboard size='1.2em' color=''/>,
     },
     {
-        name: 'Skills',
+        name: 'Projetos',
         href: '',
-        icon: <BsCodeSlash size='1.2em' color=''/>,
+        icon: <BsBriefcase size='1.2em' color=''/>,
     },
     {
         name: 'Contato',

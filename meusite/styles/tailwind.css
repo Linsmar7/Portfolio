@@ -14,6 +14,7 @@
   }
 }
 @layer utilities {
+  /* underline animation navbar */
   .bg-growing-underline {
     background-size: 0 0.1em;
     background-position: 100% 88%;
@@ -24,5 +25,26 @@
   }
   .bg-growing-underline:focus {
     background-size: 100% 0.1em;
+  }
+  /* typewriter animation headersection */
+  .line {
+    border-right: solid 2px rgba(0,0,0,0.8);
+    white-space: nowrap;
+    overflow: hidden;
+    width: 22.5rem;
+    animation: typewriter 2s steps(60) 1s, cursor 500ms steps(60) 8, hiddenCursor 0s ease-in 4s forwards;
+  }
+  @keyframes typewriter {
+    0%{width: 0;}
+    100%{width: 22.5rem;}
+  }
+  /* cursor animation headersection*/
+  @keyframes cursor {
+    0%{border-right-color: rgba(0,0,0,0.8);}
+    100%{border-right-color: transparent;}
+  }
+  /* cursor disappering */
+  @keyframes hiddenCursor {
+    to{border-right-color: transparent;}
   }
 }
