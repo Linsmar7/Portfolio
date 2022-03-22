@@ -41,13 +41,11 @@ export default function Navbar({open}) {
         <div className='flex flex-row justify-center justify-between items-center gap-x-12 uppercase xl:ml-60'>
             {
                 navigation.map((e, idx) => (
-                    <>
-                        <Link key={idx} href={e.href}>
-                            <a className='transition duration-700 hover:text-purple-100 bg-gradient-to-r from-purple-100 to-purple-100 bg-growing-underline'>
-                                {e.name}
-                            </a>
-                        </Link>
-                    </>
+                    <Link key={idx} href={e.href}>
+                        <a className='transition duration-700 hover:text-purple-100 bg-gradient-to-r from-purple-100 to-purple-100 bg-growing-underline'>
+                            {e.name}
+                        </a>
+                    </Link>
                 ))
             }
             <span className='absolute w-full transform scale-x-0 h-3 bottom-0 left-0 bg-purple-100 origin-bottom-right transition duration-75 ease-out hover:scale-x-100 hover:origin-bottom-left'></span>
