@@ -40,10 +40,8 @@ const navigation = [
 export default function Navbar({open}) {
     const [navbar, setNavbar] = useState('purple-300')
     const changeBackground = () => {
-        console.log(window.scrollY)
         if (window.scrollY >= 80) {
-          setNavbar('purple-100')
-          console.log(navbar)
+          setNavbar('purple-250')
         } else {
           setNavbar('purple-300')
         }
