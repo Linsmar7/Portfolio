@@ -38,12 +38,12 @@ const navigation = [
 ]
 
 export default function Navbar({open}) {
-    const [navbar, setNavbar] = useState('100')
+    const [navbar, setNavbar] = useState(true)
     const changeBackground = () => {
         if (window.scrollY >= 80) {
-          setNavbar('70')
+          setNavbar(false)
         } else {
-          setNavbar('100')
+          setNavbar(true)
         }
     }
     useEffect(() => {
@@ -54,7 +54,7 @@ export default function Navbar({open}) {
 
   return (
     <>
-    <header className={'hidden lg:flex flex-row w-full h-20 bg-purple-300 opacity-'+navbar+' text-white text-xl items-center justify-evenly fixed top-0 hover:opacity-100 transition ease-in duration-500'}>
+    <header className={navbar? 'navbar-active' : 'navbar-transparent'}>
         <ScrollLink onClick={() => scroll.scrollToTop()} to='header' smooth={true} duration={500} className='cursor-pointer opacity-100'>
             <p className='italic font-medium gradient-text'>&lt;<span className="text-transparent">Linsmar</span> /&gt;</p>
         </ScrollLink>
