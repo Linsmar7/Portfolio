@@ -42,7 +42,8 @@ export default function Navbar({open}) {
     const changeBackground = () => {
         console.log(window.scrollY)
         if (window.scrollY >= 80) {
-          setNavbar('purple-250')
+          setNavbar('purple-100')
+          console.log(navbar)
         } else {
           setNavbar('purple-300')
         }
