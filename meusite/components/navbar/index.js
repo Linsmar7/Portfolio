@@ -41,7 +41,7 @@ export default function Navbar({open}) {
     const [navbar, setNavbar] = useState('purple-300')
     const changeBackground = () => {
         if (window.scrollY >= 80) {
-          setNavbar('purple-250')
+          setNavbar('transparent-purple')
         } else {
           setNavbar('purple-300')
         }

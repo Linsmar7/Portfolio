@@ -11,7 +11,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        purple: { 100: '#D6ACF2', 200: '#8850BF', 250: 'rgba(90, 55, 140, 0.8)', 300: '#5A378C', 400: '#392259', 500: '#190F26'},
+        purple: { 100: '#D6ACF2', 200: '#8850BF', 300: '#5A378C', 400: '#392259', 500: '#190F26'},
+        'transparent-purple': 'rgba(90, 55, 140, 0.7)',
       },
       boxShadow: {
         '3xl': '0 8px 15px rgba(50, 50, 50, 0.7)',
