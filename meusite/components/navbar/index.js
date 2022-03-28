@@ -56,7 +56,7 @@ export default function Navbar({open}) {
   return (
     <>
     <header className={'hidden lg:flex flex-row w-full h-20 bg-'+navbar+' text-white text-xl items-center justify-evenly fixed top-0 hover:bg-purple-300 transition-colors ease-in duration-500'}>
-        <ScrollLink onClick={() => scroll.scrollToTop()} smooth={true} duration={500} className='cursor-pointer'>
+        <ScrollLink onClick={() => scroll.scrollToTop()} to='header' smooth={true} duration={500} className='cursor-pointer'>
             <p className='italic font-medium gradient-text'>&lt;<span className="text-transparent">Linsmar</span> /&gt;</p>
         </ScrollLink>
         <div className='flex flex-row justify-center justify-between items-center gap-x-12 uppercase xl:ml-60'>
@@ -79,7 +79,7 @@ export default function Navbar({open}) {
     </header>
     <header className={'transform '+open+' lg:hidden w-2/4 h-full bg-purple-300 text-white text-xl fixed top-0 transition duration-300'}>
         <div className='flex flex-col items-center h-2/4 justify-evenly'>
-            <ScrollLink onClick={() => scroll.scrollToTop()} smooth={true} duration={500} className='cursor-pointer my-28'>
+            <ScrollLink onClick={() => scroll.scrollToTop()} to='header' smooth={true} duration={500} className='cursor-pointer my-28'>
                 <p className='italic font-medium gradient-text'>&lt;<span className='text-transparent'>Linsmar</span> /&gt;</p>
             </ScrollLink>
             <div className='flex flex-col gap-y-4 uppercase'>
