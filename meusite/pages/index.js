@@ -22,7 +22,7 @@ export default function Home() {
       <HamburgerIcon onClick={() => changeMobileHook()} />
       <Header />
       <main className='mx-auto max-w-screen-lg flex flex-col'>
-        <AboutMe />
+        <AboutMe name='aboutme' id='aboutme'/>
         <Skills />
         <Experience />
         <Projects />

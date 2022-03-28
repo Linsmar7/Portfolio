@@ -22,9 +22,7 @@
   }
   .bg-growing-underline:hover {
     background-size: 100% 0.1em;
-  }
-  .bg-growing-underline:focus {
-    background-size: 100% 0.1em;
+    cursor: pointer;
   }
   /* typewriter animation headersection */
   .line {
@@ -46,5 +44,20 @@
   /* cursor disappering */
   @keyframes hiddenCursor {
     to{border-right-color: transparent;}
+  }
+  .gradient-text{
+    background: linear-gradient(to right, #190F26, #392259, #8850BF, #D6ACF2, white, white, white, white, #D6ACF2, #8850BF, #392259, #190F26);
+    background-size: 400%;
+    background-clip: text;
+    animation: gradienttext 12s linear infinite;
+  }
+  
+  @keyframes gradienttext {
+    0%{
+      background-position: 0%;
+    }
+    100%{
+      background-position: 400%;
+    }
   }
 }
