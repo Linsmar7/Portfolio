@@ -38,12 +38,12 @@ const navigation = [
 ]
 
 export default function Navbar({open}) {
-    const [navbar, setNavbar] = useState('purple-300')
+    const [navbar, setNavbar] = useState('100')
     const changeBackground = () => {
         if (window.scrollY >= 80) {
-          setNavbar('transparent-purple')
+          setNavbar('70')
         } else {
-          setNavbar('purple-300')
+          setNavbar('100')
         }
     }
     useEffect(() => {
@@ -54,11 +54,11 @@ export default function Navbar({open}) {
 
   return (
     <>
-    <header className={'hidden lg:flex flex-row w-full h-20 bg-'+navbar+' text-white text-xl items-center justify-evenly fixed top-0 hover:bg-purple-300 transition-colors ease-in duration-500'}>
-        <ScrollLink onClick={() => scroll.scrollToTop()} to='header' smooth={true} duration={500} className='cursor-pointer'>
+    <header className={'hidden lg:flex flex-row w-full h-20 bg-purple-300 opacity-'+navbar+' text-white text-xl items-center justify-evenly fixed top-0 hover:opacity-100 transition ease-in duration-500'}>
+        <ScrollLink onClick={() => scroll.scrollToTop()} to='header' smooth={true} duration={500} className='cursor-pointer opacity-100'>
             <p className='italic font-medium gradient-text'>&lt;<span className="text-transparent">Linsmar</span> /&gt;</p>
         </ScrollLink>
-        <div className='flex flex-row justify-center justify-between items-center gap-x-12 uppercase xl:ml-60'>
+        <div className='flex flex-row justify-center justify-between items-center gap-x-12 uppercase xl:ml-60 opacity-100'>
             {
                 navigation.map((e, idx) => {
                     if(idx == 5) return(<Link key={idx} href={e.href}>
