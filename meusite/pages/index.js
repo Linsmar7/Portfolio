@@ -6,7 +6,7 @@ import HamburgerIcon from '../components/navbar/hamburgerIcon';
 import Header from '../components/Header';
 import AboutMe from '../components/AboutMeSection';
 import Skills from '../components/SkillsSection';
-import Experience from '../components/ExperienceSection';
+import Experiences from '../components/ExperiencesSection';
 import Projects from '../components/ProjectsSection';
 import Contact from '../components/ContactSection'
 
@@ -24,7 +24,7 @@ export default function Home() {
       <main className='mx-auto max-w-screen-lg flex flex-col'>
         <AboutMe name='aboutme' id='aboutme'/>
         <Skills />
-        <Experience />
+        <Experiences />
         <Projects />
         <Contact />
       </main>
