@@ -30,7 +30,10 @@ function MyApp({ Component, pageProps }) {
           name="twitter:description"
           content="LINSMAR VITAL. Front-end developer and Computer Science student exploring the world of web development and its technologies and new experiences."
         />
-        <meta name="twitter:image" content="https://i.imgur.com/lwWAZTO.png" />
+        <meta
+          name="twitter:image:src"
+          content="https://i.imgur.com/lwWAZTO.png"
+        />
         <meta
           name="twitter:image:alt"
           content="Linsmar Vital Picture and description about him"
