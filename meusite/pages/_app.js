@@ -16,14 +16,16 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:title" content="Linsmar - Web Developer Portfolio" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.linsmarvital.com" />
-        <meta property="og:image" content={PortfolioMiniImg.src} />
+        <meta
+          property="og:image"
+          content={"https://www.linsmarvital.com" + PortfolioMiniImg.src}
+        />
         <meta
           property="og:description"
           content="LINSMAR VITAL. Front-end developer and Computer Science student exploring the world of web development and its technologies and new experiences."
         />
         <meta name="theme-color" content="#392259"></meta>
         <meta name="twitter:card" content="summary_large_image"></meta>
-        <meta name="twitter:creator" content="@SarahMaslinNir"></meta>
         <meta
           name="twitter:title"
           content="Linsmar - Web Developer Portfolio"
@@ -32,7 +34,10 @@ function MyApp({ Component, pageProps }) {
           name="twitter:description"
           content="LINSMAR VITAL. Front-end developer and Computer Science student exploring the world of web development and its technologies and new experiences."
         ></meta>
-        <meta name="twitter:image" content={PortfolioMiniImg.src}></meta>
+        <meta
+          name="twitter:image"
+          content={"https://www.linsmarvital.com" + PortfolioMiniImg.src}
+        ></meta>
         <meta
           name="twitter:image:alt"
           content="Linsmar Vital Picture and description about him"
