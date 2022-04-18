@@ -66,7 +66,7 @@ export default function Project({
 Project.propTypes = {
   name: PropTypes.string,
   description: PropTypes.string,
-  image: PropTypes.object,
+  image: PropTypes.string,
   skills: PropTypes.array,
   linkLive: PropTypes.string,
   linkRepo: PropTypes.string,

@@ -12,6 +12,8 @@ import VSCodeLogo from "../../src/assets/vscodeLogo.svg";
 import OfficeLogo from "../../src/assets/officeLogo.svg";
 import PythonLogo from "../../src/assets/pythonLogo.svg";
 import CppLogo from "../../src/assets/cppLogo.svg";
+import NextjsLogo from "../../src/assets/nextjs.svg";
+import GatsbyLogo from "../../src/assets/gatsby.svg";
 import { Element } from "react-scroll";
 
 const skills = [
@@ -30,6 +32,14 @@ const skills = [
   {
     name: "React",
     icon: ReactLogo,
+  },
+  {
+    name: "Next.js",
+    icon: NextjsLogo,
+  },
+  {
+    name: "Gatsby",
+    icon: GatsbyLogo,
   },
   {
     name: "styled components",
@@ -73,7 +83,7 @@ export default function Skills() {
         <span className="h-px w-10 bg-gray-500 mr-4"></span>
         <h2 className="text-3xl uppercase">Skills</h2>
       </div>
-      <div className="w-10/12 m-auto lg:m-0 lg:w-full bg-white p-10 rounded-2xl border-purple-400 border-2">
+      <div className="w-10/12 m-auto lg:m-0 lg:w-full bg-white p-10 lg:p-0 rounded-2xl border-purple-400 border-2">
         <div className="m-auto lg:w-10/12 flex flex-row flex-wrap justify-around gap-x-2">
           {skills.map((e, idx) => (
             <Skill

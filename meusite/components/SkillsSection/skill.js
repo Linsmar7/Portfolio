@@ -17,7 +17,7 @@ export default function Skill({ name, icon, divClass, iconClass }) {
 
 Skill.propTypes = {
   name: PropTypes.string,
-  icon: PropTypes.object,
+  icon: PropTypes.string,
   divClass: PropTypes.string,
   iconClass: PropTypes.string,
 };
