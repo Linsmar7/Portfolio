@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:title" content="Linsmar - Web Developer Portfolio" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.linsmarvital.com" />
-        <meta property="og:image" content="https://i.imgur.com/lwWAZTO.png" />
+        <meta property="og:image" content="https://i.imgur.com/lfJaes8.png" />
         <meta
           property="og:description"
           content="LINSMAR VITAL. Front-end developer and Computer Science student exploring the world of web development and its technologies and new experiences."
@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps }) {
         />
         <meta
           name="twitter:image:src"
-          content="https://i.imgur.com/lwWAZTO.png"
+          content="https://i.imgur.com/lfJaes8.png"
         />
         <meta
           name="twitter:image:alt"
@@ -47,6 +47,6 @@ function MyApp({ Component, pageProps }) {
 export default MyApp;
 
 MyApp.propTypes = {
-  Component: PropTypes.element,
-  pageProps: PropTypes.element,
+  Component: PropTypes.func,
+  pageProps: PropTypes.object,
 };

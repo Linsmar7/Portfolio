@@ -12,6 +12,8 @@ import StyledComponentsLogo from "../../src/assets/styledLogo.svg";
 import MUILogo from "../../src/assets/materialuiLogo.svg";
 import TailwindLogo from "../../src/assets/tailwindcssLogo.svg";
 import GitLogo from "../../src/assets/gitLogo.svg";
+import GatsbyLogo from "../../src/assets/gatsby.svg";
+import NextjsLogo from "../../src/assets/nextjs.svg";
 
 const projects = [
   {
@@ -29,7 +31,7 @@ const projects = [
     position: "Criador",
     description:
       "Desenvolvimento web de um site para ser um portfólio de um desenvolvedor web.",
-    skills: [ReactLogo, GitLogo, TailwindLogo],
+    skills: [NextjsLogo, GitLogo, TailwindLogo],
     image: PortfolioImg,
     linkLive: "https://www.linsmarvital.com",
     linkRepo: "https://github.com/Linsmar7/Portfolio",
@@ -48,8 +50,8 @@ const projects = [
     name: "Construrec",
     position: "Desenvolvedor Front-end",
     description:
-      "Desenvolvimento web de um site profissional com as tecnologias para a empresa júnior de Engenharia Civil ConstruREC. (Projeto feito na InfoJr)",
-    skills: [ReactLogo, StyledComponentsLogo, GitLogo, MUILogo],
+      "Desenvolvimento web de um site profissional para a empresa júnior de Engenharia Civil ConstruREC. (Projeto feito na InfoJr)",
+    skills: [GatsbyLogo, StyledComponentsLogo, GitLogo, MUILogo],
     image: ConstrurecImg,
     linkLive: "",
     linkRepo: "",
