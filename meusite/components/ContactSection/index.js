@@ -1,30 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import { Element } from "react-scroll";
-import { send } from "emailjs-com";
 import Button from "../Buttons/button";
 
 export default function Contact() {
-  const [toSend, setToSend] = useState({
-    from_name: "",
-    topic: "",
-    message: "",
-    reply_to: "",
-  });
-  const onSubmit = (e) => {
+  async function onSubmit(e) {
     e.preventDefault();
-    // eslint-disable-next-line no-undef
-    send(process.env.SERVICE, process.env.TEMPLATE, toSend, process.env.USER)
-      .then((response) => {
-        console.log("SUCCESS!", response.status, response.text);
-      })
-      .catch((err) => {
-        console.log("FAILED...", err);
-      });
-  };
+    const formData = {};
+    Array.from(e.currentTarget.elements).forEach((field) => {
+      if (!field.name) return;
+      formData[field.name] = field.value;
+    });
+    fetch("/api/mail", { method: "post", body: JSON.stringify(formData) });
+  }
 
-  const handleChange = (e) => {
-    setToSend({ ...toSend, [e.target.name]: e.target.value });
-  };
   return (
     <section className="flex flex-col mb-32">
       <Element name="contact" />
@@ -46,26 +34,22 @@ export default function Contact() {
         >
           <div className="">linsmarvital@gmail.com</div>
         </a>
-        <p className="mt-4 text-2xl">Formulário:</p>
+        {/* <p className="mt-4 text-2xl">Formulário:</p>
         <form onSubmit={onSubmit} className="flex flex-col text-2xl gap-y-6">
           <div className="flex flex-wrap lg:flex-nowrap lg:flex-row lg:gap-x-10 lg:gap-y-0 gap-y-6">
             <input
               className="border rounded-lg p-4 text-purple-500 w-full"
               required
               placeholder="Nome"
-              name="from_name"
+              name="name"
               type="text"
-              value={toSend.from_name}
-              onChange={handleChange}
             />
             <input
               className="border rounded-lg p-4 text-purple-500 w-full"
               required
               placeholder="E-mail"
-              name="reply_to"
+              name="email"
               type="text"
-              value={toSend.reply_to}
-              onChange={handleChange}
             />
           </div>
           <input
@@ -74,8 +58,6 @@ export default function Contact() {
             placeholder="Assunto"
             name="topic"
             type="text"
-            value={toSend.topic}
-            onChange={handleChange}
           />
           <textarea
             className="border rounded-lg p-4 text-purple-500"
@@ -84,8 +66,6 @@ export default function Contact() {
             placeholder="Escreva sua mensagem aqui"
             name="message"
             type="text"
-            value={toSend.message}
-            onChange={handleChange}
           />
           <Button
             type="submit"
@@ -93,7 +73,7 @@ export default function Contact() {
           >
             Enviar
           </Button>
-        </form>
+        </form> */}
       </div>
     </section>
   );
