@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from "react";
 import { Element } from "react-scroll";
 import Button from "../Buttons/button";
@@ -12,6 +13,7 @@ export default function Contact() {
       formData[field.name] = field.value;
     });
 
+    // eslint-disable-next-line no-useless-escape
     if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(formData.email)) {
       alert("Email inválido");
       return false;
@@ -21,12 +23,23 @@ export default function Contact() {
     //   method: "post",
     //   body: JSON.stringify(formData),
     // });
-    emailjs.send(
-      process.env.NEXT_PUBLIC_SERVICE,
-      process.env.NEXT_PUBLIC_TEMPLATE,
-      formData,
-      process.env.NEXT_PUBLIC_USER
-    );
+    emailjs
+      .send(
+        process.env.NEXT_PUBLIC_SERVICE,
+        process.env.NEXT_PUBLIC_TEMPLATE,
+        formData,
+        process.env.NEXT_PUBLIC_USER
+      )
+      .then(
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
+          alert("Mensagem enviada com sucesso!");
+        },
+        function (error) {
+          console.log("FAILED...", error);
+          alert("Aconteceu algum problema e a mensagem não foi enviada :(");
+        }
+      );
   }
 
   return (
