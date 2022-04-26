@@ -14,67 +14,63 @@ import TailwindLogo from "../../src/assets/tailwindcssLogo.svg";
 import GitLogo from "../../src/assets/gitLogo.svg";
 import GatsbyLogo from "../../src/assets/gatsby.svg";
 import NextjsLogo from "../../src/assets/nextjs.svg";
-
-const projects = [
-  {
-    name: "Semcomp 2021",
-    position: "Desenvolvedor Front-end",
-    description:
-      "Desenvolvimento web de um site para o evento de Semana da Computação que é feito pela InfoJr. (Projeto feito na InfoJr)",
-    skills: [ReactLogo, GitLogo, TailwindLogo],
-    image: SemcompImg,
-    linkLive: "https://dev-semcomp2021.netlify.app",
-    linkRepo: "",
-  },
-  {
-    name: "Portfolio",
-    position: "Criador",
-    description:
-      "Desenvolvimento web de um site para ser um portfólio de um desenvolvedor web.",
-    skills: [NextjsLogo, GitLogo, TailwindLogo],
-    image: PortfolioImg,
-    linkLive: "https://www.linsmarvital.com",
-    linkRepo: "https://github.com/Linsmar7/Portfolio",
-  },
-  {
-    name: "Parapais",
-    position: "Gerente e Desenvolvedor Front-end",
-    description:
-      "Organização, acompanhamento de equipe e desenvolvimento web de um site institucional e sistema para o grupo de pesquisa Parapais, do Instituto de Psicologia da UFBA. (Projeto feito na InfoJr)",
-    skills: [ReactLogo, StyledComponentsLogo, GitLogo, MUILogo],
-    image: ParapaisImg,
-    linkLive: "http://parapais.ips.ufba.br",
-    linkRepo: "",
-  },
-  {
-    name: "Construrec",
-    position: "Desenvolvedor Front-end",
-    description:
-      "Desenvolvimento web de um site profissional para a empresa júnior de Engenharia Civil ConstruREC. (Projeto feito na InfoJr)",
-    skills: [GatsbyLogo, StyledComponentsLogo, GitLogo, MUILogo],
-    image: ConstrurecImg,
-    linkLive: "",
-    linkRepo: "",
-  },
-  {
-    name: "Discord Bot (MiniKrakenBOT)",
-    position: "Criador",
-    description:
-      "Um bot de Discord com algumas funções simples feito com Discord.js",
-    skills: [JSLogo, GitLogo],
-    image: DiscordBot,
-    linkLive: "",
-    linkRepo: "https://github.com/Linsmar7/MiniKrakenBOT",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 export default function Projects() {
+  const { t } = useTranslation();
+  const projects = [
+    {
+      name: t("projects.allProjects.0.name"),
+      position: t("projects.allProjects.0.position"),
+      description: t("projects.allProjects.0.description"),
+      skills: [ReactLogo, GitLogo, TailwindLogo],
+      image: SemcompImg,
+      linkLive: "https://dev-semcomp2021.netlify.app",
+      linkRepo: "",
+    },
+    {
+      name: t("projects.allProjects.1.name"),
+      position: t("projects.allProjects.1.position"),
+      description: t("projects.allProjects.1.description"),
+      skills: [NextjsLogo, GitLogo, TailwindLogo],
+      image: PortfolioImg,
+      linkLive: "https://www.linsmarvital.com",
+      linkRepo: "https://github.com/Linsmar7/Portfolio",
+    },
+    {
+      name: t("projects.allProjects.2.name"),
+      position: t("projects.allProjects.2.position"),
+      description: t("projects.allProjects.2.description"),
+      skills: [ReactLogo, StyledComponentsLogo, GitLogo, MUILogo],
+      image: ParapaisImg,
+      linkLive: "http://parapais.ips.ufba.br",
+      linkRepo: "",
+    },
+    {
+      name: t("projects.allProjects.3.name"),
+      position: t("projects.allProjects.3.position"),
+      description: t("projects.allProjects.3.description"),
+      skills: [GatsbyLogo, StyledComponentsLogo, GitLogo, MUILogo],
+      image: ConstrurecImg,
+      linkLive: "",
+      linkRepo: "",
+    },
+    {
+      name: t("projects.allProjects.4.name"),
+      position: t("projects.allProjects.4.position"),
+      description: t("projects.allProjects.4.description"),
+      skills: [JSLogo, GitLogo],
+      image: DiscordBot,
+      linkLive: "",
+      linkRepo: "https://github.com/Linsmar7/MiniKrakenBOT",
+    },
+  ];
   return (
     <section className="flex flex-col mb-32">
       <Element name="projects" />
       <div className="flex flex-row items-center mb-10 ml-4">
         <span className="h-px w-10 bg-gray-500 mr-4"></span>
-        <h2 className="text-3xl uppercase">Projetos</h2>
+        <h2 className="text-3xl uppercase">{t("projects.label")}</h2>
       </div>
       <div className="flex flex-col w-10/12 m-auto lg:m-0 lg:w-full bg-white p-10 rounded-2xl border-purple-400 border-2 gap-y-4">
         {projects.map((e, idx) => (

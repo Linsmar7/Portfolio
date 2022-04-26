@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import {
   BsPerson,
@@ -10,41 +11,46 @@ import {
   BsMusicNoteBeamed,
   BsBriefcase,
 } from "react-icons/bs";
-
-const navigation = [
-  {
-    name: "Sobre mim",
-    href: "aboutme",
-    icon: <BsPerson size="1.2em" color="" />,
-  },
-  {
-    name: "Skills",
-    href: "skills",
-    icon: <BsCodeSlash size="1.2em" color="" />,
-  },
-  {
-    name: "Experiência",
-    href: "experience",
-    icon: <BsKeyboard size="1.2em" color="" />,
-  },
-  {
-    name: "Projetos",
-    href: "projects",
-    icon: <BsBriefcase size="1.2em" color="" />,
-  },
-  {
-    name: "Contato",
-    href: "contact",
-    icon: <BsTelephone size="1.2em" color="" />,
-  },
-  {
-    name: "Music",
-    href: "https://soundcloud.com/linsmar/tracks",
-    icon: <BsMusicNoteBeamed size="1.2em" color="" />,
-  },
-];
+import { MdLanguage } from "react-icons/md";
+import BRFlag from "./../../src/assets/brazilflag.svg";
+import USAFlag from "./../../src/assets/usaflag.svg";
+import { useTranslation } from "next-i18next";
 
 export default function Navbar({ open }) {
+  const { t } = useTranslation();
+  const router = useRouter();
+  const navigation = [
+    {
+      name: t("aboutme.label"),
+      href: "aboutme",
+      icon: <BsPerson size="1.2em" color="" />,
+    },
+    {
+      name: "Skills",
+      href: "skills",
+      icon: <BsCodeSlash size="1.2em" color="" />,
+    },
+    {
+      name: t("experience.label"),
+      href: "experience",
+      icon: <BsKeyboard size="1.2em" color="" />,
+    },
+    {
+      name: t("projects.label"),
+      href: "projects",
+      icon: <BsBriefcase size="1.2em" color="" />,
+    },
+    {
+      name: t("contact.label"),
+      href: "contact",
+      icon: <BsTelephone size="1.2em" color="" />,
+    },
+    {
+      name: "Music",
+      href: "https://soundcloud.com/linsmar/tracks",
+      icon: <BsMusicNoteBeamed size="1.2em" color="" />,
+    },
+  ];
   const [navbar, setNavbar] = useState(true);
   const changeBackground = () => {
     if (window.scrollY >= 80) {
@@ -58,6 +64,14 @@ export default function Navbar({ open }) {
     // adding the event when scroll change background
     window.addEventListener("scroll", changeBackground);
   });
+  const [langNav, setLangNav] = useState(
+    "-translate-x-full invisible opacity-0"
+  );
+  function changeLangNavHook() {
+    if (langNav == "-translate-x-full invisible opacity-0")
+      setLangNav("translate-x-0 visible opacity-100");
+    else setLangNav("-translate-x-full invisible opacity-0");
+  }
 
   return (
     <>
@@ -99,6 +113,27 @@ export default function Navbar({ open }) {
               </ScrollLink>
             );
           })}
+          <div className="flex gap-x-2 items-center">
+            <MdLanguage
+              size="1.4em"
+              color=""
+              className="cursor-pointer"
+              onClick={() => changeLangNavHook()}
+            />
+            <div
+              className={
+                "flex w-6 h-6 gap-x-2 cursor-pointer lang-transition transform " +
+                langNav
+              }
+            >
+              <Link href={router.pathname} locale="en">
+                <img src={USAFlag.src} alt="english" />
+              </Link>
+              <Link href={router.pathname} locale="pt">
+                <img src={BRFlag.src} alt="português" />
+              </Link>
+            </div>
+          </div>
           <span className="absolute w-full transform scale-x-0 h-3 bottom-0 left-0 bg-purple-100 origin-bottom-right transition duration-75 ease-out hover:scale-x-100 hover:origin-bottom-left"></span>
         </div>
       </header>
@@ -149,6 +184,27 @@ export default function Navbar({ open }) {
                 </ScrollLink>
               );
             })}
+            <div className="flex gap-x-2 items-center">
+              <MdLanguage
+                size="1.4em"
+                color=""
+                className="cursor-pointer"
+                onClick={() => changeLangNavHook()}
+              />
+              <div
+                className={
+                  "flex w-6 h-6 gap-x-2 cursor-pointer lang-transition transform " +
+                  langNav
+                }
+              >
+                <Link href={router.pathname} locale="en">
+                  <img src={USAFlag.src} alt="english" />
+                </Link>
+                <Link href={router.pathname} locale="pt">
+                  <img src={BRFlag.src} alt="português" />
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </header>

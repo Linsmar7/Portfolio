@@ -4,6 +4,7 @@ import LinsmarPicture from "../../src/assets/AvatarLinsmar.png";
 import Button from "./../Buttons/button.js";
 import GridButton from "./../Buttons/gridButton.js";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { useTranslation } from "react-i18next";
 
 const socials = [
   {
@@ -19,6 +20,7 @@ const socials = [
 ];
 
 export default function Header() {
+  const { t } = useTranslation();
   return (
     <section className="flex flex-col lg:flex-row lg:gap-0 h-screen justify-center items-center lg:mt-0 mt-12 gap-y-8">
       <Avatar
@@ -32,21 +34,15 @@ export default function Header() {
           <span className="text-purple-300">LINSMAR</span> VITAL
         </h1>
         <h2 className="lg:px-0 lg:text-left text-xl px-2 text-center">
-          Um estudante de{" "}
-          <span className="text-purple-300 font-bold">
-            Ciência da Computação
-          </span>{" "}
-          explorando o mundo da programação web, suas tecnologias e novas
-          experiências como{" "}
-          <span className="text-purple-300 font-bold">
-            Desenvolvedor Front-End
-          </span>
-          .
+          {t("textheader1")}{" "}
+          <span className="text-purple-300 font-bold">{t("span2")}</span>{" "}
+          {t("textheader2")}{" "}
+          <span className="text-purple-300 font-bold">{t("span1")}</span>.
         </h2>
         <div className="flex flex-row items-center">
           <Button color="purple-300" textColor="white" margin="mr-20">
-            <a href="/Curriculo.pdf" download>
-              Currículo
+            <a href={t("resumelink")} download>
+              {t("resume")}
             </a>
           </Button>
           {socials.map((e, idx) => (

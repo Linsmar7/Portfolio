@@ -1,0 +1,69 @@
+{
+  "aboutme": {
+    "label": "About Me",
+    "question": "Hello World, how can I help you change the world?",
+    "firstp": "I had a great learning experience within the junior IT company at UFBA, the great InfoJr, I fell in love with web programming and went after the news and joy that this world brings every day, I participated in real team projects as a front-end developer and I developed soft-skills in the human resources sector.",
+    "secondp": "I'm currently specializing more in front-end and starting to learn back-end, I like challenges and love to create solutions. I want to bring solutions in an impactful way, so, shall we code?"
+  },
+  "experience": {
+    "label": "Experience",
+    "ufba": {
+      "course": "Bachelor's Degree in Computer Science",
+      "time": "2019 - on going"
+    },
+    "infojr": [
+      { "label": "Front-end Developer", "time": "Sep. 2019 - Feb 2022" },
+      { "label": "People Manager", "time": "Dec. 2019 - Agu 2021" }
+    ]
+  },
+  "projects": {
+    "label": "Projects",
+    "allProjects": [
+      {
+        "name": "Semcomp 2021",
+        "position": "Front-end Developer",
+        "description": "Web development of a website for the Computing Week event that is made by InfoJr. (Project made at InfoJr)"
+      },
+      {
+        "name": "Portfolio",
+        "position": "Creator",
+        "description": "Web development of a website to be a portfolio of a web developer."
+      },
+      {
+        "name": "Parapais",
+        "position": "Front-end Developer and Project Manager",
+        "description": "Organization, team monitoring and web development of an institutional website and system for the Parapais research group, from the UFBA Institute of Psychology. (Project made at InfoJr)"
+      },
+      {
+        "name": "Construrec",
+        "position": "Front-end Developer",
+        "description": "Web development of a professional website for the junior civil engineering company ConstruREC. (Project made at InfoJr)"
+      },
+      {
+        "name": "Discord Bot (MiniKrakenBOT)",
+        "position": "Creator",
+        "description": "A Discord bot with some simple functions made with Discord.js"
+      }
+    ]
+  },
+  "contact": {
+    "label": "Contact",
+    "h1": "Send me a message!",
+    "p": "I am currently looking for internship or junior level opportunities! If you know of any vacancies, have any questions or just want to talk to me about anything, just send me an email or fill out the form.",
+    "formlabel": "Form:",
+    "nameph": "Name",
+    "emailph": "Email",
+    "subjectph": "Subject",
+    "messageph": "Write your message here",
+    "button": "Send",
+    "dialogSucess": "Message sent successfully!",
+    "dialogFail": "There was a problem and the message was not sent :(",
+    "invalidEmail": "Invalid email"
+  },
+  "textheader1": "A",
+  "textheader2": "student exploring the world of web programming, its technologies and new experiences as a",
+  "span1": "Front-End Developer",
+  "span2": "Computer Science",
+  "resume": "Resume",
+  "resumelink": "/Resume.pdf"
+}
