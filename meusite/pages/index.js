@@ -7,8 +7,18 @@ import Skills from "../components/SkillsSection";
 import Experiences from "../components/ExperiencesSection";
 import Projects from "../components/ProjectsSection";
 import Contact from "../components/ContactSection";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-export default function Home() {
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+    },
+  };
+}
+
+// eslint-disable-next-line react/prop-types
+export default function Home({ locale }) {
   const [mobile, setMobile] = useState("-translate-x-full");
   function changeMobileHook() {
     if (mobile == "-translate-x-full") setMobile("translate-x-0");

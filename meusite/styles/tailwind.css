@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
-  font-family: 'Roboto';
-  src: local('Roboto'), url(./../fonts/Roboto/Roboto-Regular.ttf) format('ttf');
+  font-family: "Roboto";
+  src: local("Roboto"), url(./../fonts/Roboto/Roboto-Regular.ttf) format("ttf");
 }
 @layer base {
   body {
-    @apply bg-gray-100
+    @apply bg-gray-100;
   }
 }
 @layer utilities {
@@ -26,37 +25,72 @@
   }
   /* typewriter animation headersection */
   .line {
-    border-right: solid 2px rgba(0,0,0,0.8);
+    border-right: solid 2px rgba(0, 0, 0, 0.8);
     white-space: nowrap;
     overflow: hidden;
+    visibility: hidden;
     width: 22.5rem;
-    animation: typewriter 2s steps(60) 1s, cursor 500ms steps(60) 8, hiddenCursor 0s ease-in 4s forwards;
+    animation: fadeIn 200ms forwards 1s, typewriter 2s steps(60) 1s,
+      cursor 500ms steps(60) 8, hiddenCursor 0s ease-in 4s forwards;
   }
   @keyframes typewriter {
-    0%{width: 0;}
-    100%{width: 22.5rem;}
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 22.5rem;
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      visibility: visible;
+      opacity: 1;
+    }
   }
   /* cursor animation headersection*/
   @keyframes cursor {
-    0%{border-right-color: rgba(0,0,0,0.8);}
-    100%{border-right-color: transparent;}
+    0% {
+      border-right-color: rgba(0, 0, 0, 0.8);
+    }
+    100% {
+      border-right-color: transparent;
+    }
   }
   /* cursor disappering */
   @keyframes hiddenCursor {
-    to{border-right-color: transparent;}
+    to {
+      border-right-color: transparent;
+    }
   }
-  .gradient-text{
-    background: linear-gradient(to right, #190F26, #392259, #8850BF, #D6ACF2, white, white, white, white, #D6ACF2, #8850BF, #392259, #190F26);
+  .gradient-text {
+    background: linear-gradient(
+      to right,
+      #190f26,
+      #392259,
+      #8850bf,
+      #d6acf2,
+      white,
+      white,
+      white,
+      white,
+      #d6acf2,
+      #8850bf,
+      #392259,
+      #190f26
+    );
     background-size: 400%;
     background-clip: text;
     animation: gradienttext 12s linear infinite;
   }
-  
+
   @keyframes gradienttext {
-    0%{
+    0% {
       background-position: 0%;
     }
-    100%{
+    100% {
       background-position: 400%;
     }
   }
@@ -67,12 +101,13 @@
     display: none;
   }
   .navbar-transparent:hover {
-    background: rgba(90, 55, 140, 1);
+    opacity: 1;
   }
-  @media(min-width: 1024px){
+  @media (min-width: 1024px) {
     .navbar-active {
       display: flex;
-      background: rgba(90, 55, 140, 1);
+      background: rgba(90, 55, 140);
+      opacity: 1;
       width: 100%;
       height: 5rem;
       color: white;
@@ -82,12 +117,13 @@
       justify-content: space-evenly;
       position: fixed;
       top: 0px;
-      transition-property: background;
+      transition-property: opacity;
       transition-duration: 500ms;
       transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
     }
     .navbar-transparent {
-      background: rgba(90, 55, 140, 0.7);
+      background: rgba(90, 55, 140);
+      opacity: 0.7;
       display: flex;
       width: 100%;
       height: 5rem;
@@ -98,9 +134,12 @@
       justify-content: space-evenly;
       position: fixed;
       top: 0px;
-      transition-property: background;
+      transition-property: opacity;
       transition-duration: 500ms;
       transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
     }
+  }
+  .lang-transition {
+    transition: transform 500ms, visibility 500ms, opacity 400ms;
   }
 }

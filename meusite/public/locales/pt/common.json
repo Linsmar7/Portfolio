@@ -1,0 +1,69 @@
+{
+  "aboutme": {
+    "label": "Sobre mim",
+    "question": "Hello World, como posso te ajudar a mudar o mundo?",
+    "firstp": "Tive um grande aprendizado dentro da empresa júnior de informática da UFBA, a grande InfoJr, me apaixonei por programação web e fui atrás das novidades que esse mundo traz todos os dias, participei de projetos reais em equipe como desenvolvedor front-end e desenvolvi soft-skills na diretoria de gestão de pessoas.",
+    "secondp": "Atualmente estou me especializando mais em front-end e começando a aprender back-end, gosto de desafios e criar soluções. Quero trazer soluções de uma forma impactante, e ai, vamos codar?"
+  },
+  "experience": {
+    "label": "Experiência",
+    "ufba": {
+      "course": "Bacharelado Ciência da Computação",
+      "time": "2019 - Cursando"
+    },
+    "infojr": [
+      { "label": "Desenvolvedor Front-End", "time": "Set. 2019 - Fev. 2022" },
+      { "label": "Gerente de Pessoas", "time": "Dez. 2019 - Ago. 2021" }
+    ]
+  },
+  "projects": {
+    "label": "Projetos",
+    "allProjects": [
+      {
+        "name": "Semcomp 2021",
+        "position": "Desenvolvedor Front-end",
+        "description": "Desenvolvimento web de um site para o evento de Semana da Computação que é feito pela InfoJr. (Projeto feito na InfoJr)"
+      },
+      {
+        "name": "Portfólio",
+        "position": "Criador",
+        "description": "Desenvolvimento web de um site para ser um portfólio de um desenvolvedor web."
+      },
+      {
+        "name": "Parapais",
+        "position": "Gerente e Desenvolvedor Front-end",
+        "description": "Organização, acompanhamento de equipe e desenvolvimento web de um site institucional e sistema para o grupo de pesquisa Parapais, do Instituto de Psicologia da UFBA. (Projeto feito na InfoJr)"
+      },
+      {
+        "name": "Construrec",
+        "position": "Desenvolvedor Front-end",
+        "description": "Desenvolvimento web de um site profissional para a empresa júnior de Engenharia Civil ConstruREC. (Projeto feito na InfoJr)"
+      },
+      {
+        "name": "Discord Bot (MiniKrakenBOT)",
+        "position": "Criador",
+        "description": "Um bot de Discord com algumas funções simples feito com Discord.js"
+      }
+    ]
+  },
+  "contact": {
+    "label": "Contato",
+    "h1": "Me mande uma mensagem!",
+    "p": "Estou atualmente em busca de oportunidades do nível de estágio ou júnior! Se você sabe de alguma vaga, se tem alguma pergunta ou apenas quer falar comigo sobre qualquer coisa, basta me mandar um email ou preencher o formulário.",
+    "formlabel": "Formulário:",
+    "nameph": "Nome",
+    "emailph": "E-mail",
+    "subjectph": "Assunto",
+    "messageph": "Escreva sua mensagem aqui",
+    "button": "Enviar",
+    "dialogSucess": "Mensagem enviada com sucesso!",
+    "dialogFail": "Aconteceu algum problema e a mensagem não foi enviada :(",
+    "invalidEmail": "Email inválido"
+  },
+  "textheader1": "Um estudante de",
+  "textheader2": "explorando o mundo da programação web, suas tecnologias e novas experiências como",
+  "span1": "Desenvolvedor Front-End",
+  "span2": "Ciência da Computação",
+  "resume": "Currículo",
+  "resumelink": "/Curriculo.pdf"
+}
