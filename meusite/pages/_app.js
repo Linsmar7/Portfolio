@@ -74,9 +74,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="theme-color" content="#392259" />
         <link rel="apple-touch-icon" href={icon}></link>
       </Head>
-      <ThemeProvider attribute="class">
-        <Component {...pageProps} />
-      </ThemeProvider>
+      <Component {...pageProps} />
     </>
   );
 }
