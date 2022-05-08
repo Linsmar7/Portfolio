@@ -13,6 +13,7 @@ export default function Experience({ icon, name, description, date, link }) {
           src={icon}
           alt={name}
           className="lg:w-14 lg:h-20 w-10 h-14 object-fill"
+          loading="lazy"
         />
         <p className="font-bold">{name}</p>
         <p>{description}</p>

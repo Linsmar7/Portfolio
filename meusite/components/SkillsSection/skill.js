@@ -10,7 +10,12 @@ export default function Skill({ name, icon, divClass, iconClass, title }) {
       }
       title={title}
     >
-      <img src={icon} alt={name || title} className={iconClass} />
+      <img
+        src={icon}
+        alt={name || title}
+        className={iconClass}
+        loading="lazy"
+      />
       <p className="mx-4">{name}</p>
     </div>
   );

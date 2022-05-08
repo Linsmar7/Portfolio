@@ -18,6 +18,7 @@ export default function Project({
         src={image}
         alt={name}
         className="w-72 h-56 rounded-2xl object-cover"
+        loading="lazy"
       />
       <div className="flex flex-col">
         <p className="text-xl lg:text-3xl">{name}</p>
