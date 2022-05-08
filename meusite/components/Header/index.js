@@ -45,15 +45,18 @@ export default function Header() {
               {t("resume")}
             </a>
           </Button>
-          {socials.map((e, idx) => (
-            <GridButton
-              key={idx}
-              href={e.link}
-              icon={e.icon}
-              color="white"
-              link={e.link}
-            ></GridButton>
-          ))}
+          <div className="flex gap-x-2 lg:gap-x-0">
+            {socials.map((e, idx) => (
+              <GridButton
+                key={idx}
+                href={e.link}
+                icon={e.icon}
+                color="white"
+                link={e.link}
+                name={e.name}
+              ></GridButton>
+            ))}
+          </div>
         </div>
       </div>
     </section>

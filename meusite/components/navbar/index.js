@@ -15,6 +15,7 @@ import { MdLanguage } from "react-icons/md";
 import BRFlag from "./../../src/assets/brazilflag.svg";
 import USAFlag from "./../../src/assets/usaflag.svg";
 import { useTranslation } from "next-i18next";
+import { ThemeToggle } from "../ThemeToggle";
 
 export default function Navbar({ open }) {
   const { t } = useTranslation();
@@ -75,7 +76,9 @@ export default function Navbar({ open }) {
 
   return (
     <>
-      <header className={navbar ? "navbar-active" : "navbar-transparent"}>
+      <header
+        className={navbar ? "navbar-active" : "navbar-transparent" + " z-50"}
+      >
         <ScrollLink
           onClick={() => scroll.scrollToTop()}
           to="header"
@@ -83,8 +86,9 @@ export default function Navbar({ open }) {
           duration={500}
           className="cursor-pointer opacity-100"
         >
-          <p className="italic font-medium gradient-text">
-            &lt;<span className="text-transparent">Linsmar</span> /&gt;
+          <p target="_blank" className="italic font-medium gradient-text">
+            &lt;
+            <span className="text-transparent">Linsmar</span> /&gt;
           </p>
         </ScrollLink>
         <div className="flex flex-row justify-center justify-between items-center gap-x-12 uppercase xl:ml-60 opacity-100">
@@ -122,7 +126,7 @@ export default function Navbar({ open }) {
             />
             <div
               className={
-                "flex w-6 h-6 gap-x-2 cursor-pointer lang-transition transform " +
+                "flex w-6 h-6 gap-x-2 cursor-pointer lang-transition transform mr-10 " +
                 langNav
               }
             >
@@ -133,6 +137,7 @@ export default function Navbar({ open }) {
                 <img src={BRFlag.src} alt="português" />
               </Link>
             </div>
+            <ThemeToggle />
           </div>
           <span className="absolute w-full transform scale-x-0 h-3 bottom-0 left-0 bg-purple-100 origin-bottom-right transition duration-75 ease-out hover:scale-x-100 hover:origin-bottom-left"></span>
         </div>
@@ -141,7 +146,7 @@ export default function Navbar({ open }) {
         className={
           "transform " +
           open +
-          " lg:hidden w-2/4 h-full bg-purple-300 text-white text-xl fixed top-0 transition duration-300"
+          " lg:hidden w-2/4 h-full bg-purple-300 text-white text-xl fixed top-0 transition duration-300 z-50"
         }
       >
         <div className="flex flex-col items-center h-2/4 justify-evenly">
@@ -205,6 +210,7 @@ export default function Navbar({ open }) {
                 </Link>
               </div>
             </div>
+            <ThemeToggle />
           </div>
         </div>
       </header>

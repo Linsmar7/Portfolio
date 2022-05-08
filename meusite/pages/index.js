@@ -18,7 +18,7 @@ export async function getStaticProps({ locale }) {
 }
 
 // eslint-disable-next-line react/prop-types
-export default function Home({ locale }) {
+export default function Home() {
   const [mobile, setMobile] = useState("-translate-x-full");
   function changeMobileHook() {
     if (mobile == "-translate-x-full") setMobile("translate-x-0");

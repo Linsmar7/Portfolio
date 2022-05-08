@@ -20,6 +20,11 @@
     "label": "Projects",
     "allProjects": [
       {
+        "name": "Feedback Widget",
+        "position": "Front-end, Back-end and Mobile Developer",
+        "description": "Learning with the NLW Return (Rocketseat)! Project mobile, front-end and back-end. A feedback widget that print your screen and send the photo and your comment to an email."
+      },
+      {
         "name": "Semcomp 2021",
         "position": "Front-end Developer",
         "description": "Web development of a website for the Computing Week event that is made by InfoJr. (Project made at InfoJr)"

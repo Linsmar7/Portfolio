@@ -13,7 +13,7 @@ export default function Project({
   position,
 }) {
   return (
-    <div className="flex flex-col lg:flex-row gap-x-8 bg-white rounded-2xl border-slate-800 border p-8 transition duration-700 hover:shadow-2xl">
+    <div className="flex flex-col lg:flex-row gap-x-8 bg-white dark:bg-purple-500 rounded-2xl border-slate-800 dark:border-purple-300 border p-8 transition duration-700 hover:shadow-2xl transform hover:scale-105">
       <img
         src={image}
         alt={name}
@@ -26,7 +26,8 @@ export default function Project({
           {skills.map((e, idx) => (
             <Skill
               key={idx}
-              icon={e.src}
+              icon={e.src.src}
+              title={e.title}
               divClass="w-8 h-8 border"
               iconClass="w-6 h-6"
             />
