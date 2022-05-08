@@ -53,7 +53,7 @@
   /* cursor animation headersection*/
   @keyframes cursor {
     0% {
-      border-right-color: rgba(0, 0, 0, 0.8);
+      border-right-color: #5a378c;
     }
     100% {
       border-right-color: transparent;
