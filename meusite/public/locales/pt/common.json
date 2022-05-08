@@ -20,6 +20,11 @@
     "label": "Projetos",
     "allProjects": [
       {
+        "name": "Feedback Widget",
+        "position": "Desenvolvedor Front-end, Back-end e Mobile",
+        "description": "Aprendendo com o NLW Return (Rocketseat)! Projeto mobile, front-end e back-end. Um widget de feedback que tira um print da sua tela e envia junto com seu comentário para um email."
+      },
+      {
         "name": "Semcomp 2021",
         "position": "Desenvolvedor Front-end",
         "description": "Desenvolvimento web de um site para o evento de Semana da Computação que é feito pela InfoJr. (Projeto feito na InfoJr)"

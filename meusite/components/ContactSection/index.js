@@ -51,12 +51,14 @@ export default function Contact() {
         <span className="h-px w-10 bg-gray-500 mr-4"></span>
         <h2 className="text-3xl uppercase">{t("contact.label")}</h2>
       </div>
-      <div className="flex flex-col w-10/12 m-auto lg:m-0 lg:w-full bg-white p-10 rounded-2xl border-purple-400 border-2">
+      <div className="flex flex-col w-10/12 m-auto lg:m-0 lg:w-full bg-white dark:bg-purple-500 p-10 rounded-2xl border-purple-400 border-2">
         <h2 className="text-2xl">{t("contact.h1")}</h2>
         <p className="mb-4">{t("contact.p")}</p>
         <a
           href="mailto:linsmarvital@gmail.com"
-          className="self-center lg:w-2/6 text-lg text-purple-200 p-2 lg:m-2 border-2 rounded-lg border-purple-300 tracking-widest transition duration-700 hover:shadow-3xl hover:text-white hover:bg-purple-300 h-20 flex justify-center items-center"
+          className={
+            "self-center lg:w-2/6 text-lg text-purple-200 p-2 lg:m-2 border-2 rounded-lg border-purple-300 tracking-widest transition duration-700 hover:shadow-2xl hover:text-white hover:bg-purple-300 h-20 flex justify-center items-center"
+          }
         >
           <div className="">linsmarvital@gmail.com</div>
         </a>
@@ -64,14 +66,14 @@ export default function Contact() {
         <form onSubmit={onSubmit} className="flex flex-col text-2xl gap-y-6">
           <div className="flex flex-wrap lg:flex-nowrap lg:flex-row lg:gap-x-10 lg:gap-y-0 gap-y-6">
             <input
-              className="border rounded-lg p-4 text-purple-500 w-full"
+              className="border rounded-lg p-4 text-purple-500 w-full dark:bg-purple-500 dark:border-purple-400 dark:text-white"
               required
               placeholder={t("contact.nameph")}
               name="name"
               type="text"
             />
             <input
-              className="border rounded-lg p-4 text-purple-500 w-full"
+              className="border rounded-lg p-4 text-purple-500 w-full dark:bg-purple-500 dark:border-purple-400 dark:text-white"
               required
               placeholder={t("contact.emailph")}
               name="email"
@@ -79,14 +81,14 @@ export default function Contact() {
             />
           </div>
           <input
-            className="border rounded-lg p-4 text-purple-500"
+            className="border rounded-lg p-4 text-purple-500 dark:bg-purple-500 dark:border-purple-400 dark:text-white"
             required
             placeholder={t("contact.subjectph")}
             name="topic"
             type="text"
           />
           <textarea
-            className="border rounded-lg p-4 text-purple-500"
+            className="border rounded-lg p-4 text-purple-500 dark:bg-purple-500 dark:border-purple-400 dark:text-white"
             required
             rows="6"
             placeholder={t("contact.messageph")}
@@ -95,7 +97,7 @@ export default function Contact() {
           />
           <Button
             type="submit"
-            newClass="bg-purple-200 text-white p-2 px-6 rounded-2xl tracking-widest transition duration-700 hover:shadow-3xl hover:bg-purple-300 self-center mb-6"
+            newClass="bg-purple-200 text-white p-2 px-6 rounded-2xl tracking-widest transition duration-700 hover:shadow-2xl hover:bg-purple-300 self-center mb-6"
           >
             {t("contact.button")}
           </Button>

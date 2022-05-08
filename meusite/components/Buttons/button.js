@@ -19,10 +19,11 @@ export default function Button({
             color +
             " p-2 px-6 rounded-2xl text-" +
             textColor +
-            " tracking-widest transition duration-700 hover:shadow-3xl " +
+            " tracking-widest transition duration-700 " +
             margin +
             " w-" +
-            width
+            width +
+            " hover:shadow-2xl hover:bg-purple-200"
       }
       type={type}
     >

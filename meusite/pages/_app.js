@@ -2,7 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import Head from "next/head";
 import "../styles/tailwind.css";
+import icon from "./../public/favicon.ico";
 import { appWithTranslation } from "next-i18next";
+import { ThemeProvider } from "next-themes";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -69,8 +71,12 @@ function MyApp({ Component, pageProps }) {
           content="Linsmar Vital Picture and description about him"
           key="twtimgalt"
         />
+        <meta name="theme-color" content="#392259" />
+        <link rel="apple-touch-icon" href={icon}></link>
       </Head>
-      <Component {...pageProps} />
+      <ThemeProvider attribute="class">
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   );
 }
