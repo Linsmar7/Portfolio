@@ -5,7 +5,7 @@ export default function Skill({ name, icon, divClass, iconClass, title }) {
   return (
     <div
       className={
-        "hover:shadow-2xl transform hover:scale-125 dark:hover:bg-purple-400 flex flex-col items-center justify-center text-xs lg:text-sm text-center rounded-lg border-transparent tracking-widest transition duration-700 " +
+        "hover:shadow-2xl transform hover:scale-110 dark:hover:bg-purple-400 flex flex-col items-center justify-center text-xs lg:text-sm text-center rounded-lg border-transparent tracking-widest transition duration-700 " +
         divClass
       }
       title={title}

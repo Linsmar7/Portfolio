@@ -35,27 +35,27 @@ export default function Project({
           ))}
         </div>
         <p className="text-base lg:text-lg my-4">{description}</p>
-        <div className="flex flex-row">
+        <div className="flex flex-row flex-wrap gap-y-3">
           {linkLive ? (
-            <Button
-              color="purple-300"
-              textColor="white"
-              margin="mr-2"
-              width="32"
-            >
-              <a href={linkLive} target="_blank" rel="noreferrer">
+            <a href={linkLive} target="_blank" rel="noreferrer">
+              <Button
+                color="purple-300"
+                textColor="white"
+                margin="mr-2"
+                width="32"
+              >
                 Live
-              </a>
-            </Button>
+              </Button>
+            </a>
           ) : (
             <></>
           )}
           {linkRepo ? (
-            <Button color="purple-300" textColor="white" width="32">
-              <a href={linkRepo} target="_blank" rel="noreferrer">
+            <a href={linkRepo} target="_blank" rel="noreferrer">
+              <Button color="purple-300" textColor="white" width="32">
                 Repo
-              </a>
-            </Button>
+              </Button>
+            </a>
           ) : (
             <></>
           )}

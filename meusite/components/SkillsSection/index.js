@@ -89,7 +89,7 @@ export default function Skills() {
         <h2 className="text-3xl uppercase">Skills</h2>
       </div>
       <div className="w-10/12 m-auto lg:m-0 lg:w-full bg-white p-10 lg:p-0 rounded-2xl border-purple-400 border-2 dark:bg-purple-500">
-        <div className="m-auto lg:w-10/12 flex flex-row flex-wrap justify-around gap-x-8">
+        <div className="m-auto lg:w-10/12 flex flex-row flex-wrap justify-around lg:gap-x-8">
           {skills.map((e, idx) => (
             <Skill
               key={idx}

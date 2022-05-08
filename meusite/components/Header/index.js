@@ -40,11 +40,11 @@ export default function Header() {
           <span className="text-purple-300 font-bold">{t("span1")}</span>.
         </h2>
         <div className="flex flex-row items-center">
-          <Button color="purple-300" textColor="white" margin="mr-20">
-            <a href={t("resumelink")} download>
+          <a href={t("resumelink")} download>
+            <Button color="purple-300" textColor="white" margin="mr-20">
               {t("resume")}
-            </a>
-          </Button>
+            </Button>
+          </a>
           <div className="flex gap-x-2 lg:gap-x-0">
             {socials.map((e, idx) => (
               <GridButton
