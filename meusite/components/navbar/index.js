@@ -91,7 +91,7 @@ export default function Navbar({ open }) {
             <span className="text-transparent">Linsmar</span> /&gt;
           </p>
         </ScrollLink>
-        <div className="flex flex-row justify-center justify-between items-center gap-x-12 uppercase xl:ml-60 opacity-100">
+        <div className="flex flex-row justify-between items-center gap-x-12 uppercase xl:ml-60 opacity-100">
           {navigation.map((e, idx) => {
             if (idx == 5)
               return (
