@@ -23,7 +23,7 @@ export default function Project({
       <div className="flex flex-col">
         <p className="text-xl lg:text-3xl">{name}</p>
         <p className="text-sm">{position}</p>
-        <div className="flex flex-row">
+        <div className="flex flex-row flex-wrap">
           {skills.map((e, idx) => (
             <Skill
               key={idx}
