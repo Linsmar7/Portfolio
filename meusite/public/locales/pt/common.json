@@ -2,8 +2,8 @@
   "aboutme": {
     "label": "Sobre mim",
     "question": "Hello World, como posso te ajudar a mudar o mundo?",
-    "firstp": "Tive um grande aprendizado dentro da empresa júnior de informática da UFBA, a grande InfoJr, me apaixonei por programação web e fui atrás das novidades que esse mundo traz todos os dias, participei de projetos reais em equipe como desenvolvedor front-end e desenvolvi soft-skills na diretoria de gestão de pessoas.",
-    "secondp": "Atualmente estou me especializando mais em front-end e começando a aprender back-end, gosto de desafios e criar soluções. Quero trazer soluções de uma forma impactante, e ai, vamos codar?"
+    "firstp": "Tive um grande aprendizado dentro da empresa júnior de informática da UFBA, a grande InfoJr, me apaixonei por programação web. Hoje atuo como Desenvolvedor Fullstack na Chuva Inc., construindo sistemas escaláveis que impactam milhares de usuários no ambiente acadêmico.",
+    "secondp": "Trabalho principalmente com Angular, React no front-end e PHP, Laravel e Drupal no back-end. Tenho experiência com arquitetura de software, otimização e testes automatizados. Quero trazer soluções de uma forma impactante, e ai, vamos codar?"
   },
   "experience": {
     "label": "Experiência",
@@ -12,8 +12,24 @@
       "time": "2019 - Cursando"
     },
     "infojr": [
-      { "label": "Desenvolvedor Front-End", "time": "Set. 2019 - Fev. 2022" },
-      { "label": "Gerente de Pessoas", "time": "Dez. 2019 - Ago. 2021" }
+      {
+        "label": "Desenvolvedor Front-End",
+        "time": "Set. 2019 - Fev. 2022"
+      },
+      {
+        "label": "Gerente de Pessoas",
+        "time": "Dez. 2019 - Ago. 2021"
+      }
+    ],
+    "chuva": [
+      {
+        "label": "Desenvolvedor Júnior FullStack",
+        "time": "Jun. 2024 - Presente"
+      },
+      {
+        "label": "Desenvolvedor Júnior Front-End",
+        "time": "Jun. 2022 - Jun. 2024"
+      }
     ]
   },
   "projects": {
@@ -54,7 +70,7 @@
   "contact": {
     "label": "Contato",
     "h1": "Me mande uma mensagem!",
-    "p": "Estou atualmente em busca de oportunidades do nível de estágio ou júnior! Se você sabe de alguma vaga, se tem alguma pergunta ou apenas quer falar comigo sobre qualquer coisa, basta me mandar um email ou preencher o formulário.",
+    "p": "Estou atualmente em busca de oportunidades como Desenvolvedor Pleno ou Júnior! Se você sabe de alguma vaga, se tem alguma pergunta ou apenas quer falar comigo, basta me mandar um email ou preencher o formulário.",
     "formlabel": "Formulário:",
     "nameph": "Nome",
     "emailph": "E-mail",
@@ -67,7 +83,7 @@
   },
   "textheader1": "Um estudante de",
   "textheader2": "explorando o mundo da programação web, suas tecnologias e novas experiências como",
-  "span1": "Desenvolvedor Front-End",
+  "span1": "Desenvolvedor Full-Stack",
   "span2": "Ciência da Computação",
   "resume": "Currículo",
   "resumelink": "/Curriculo.pdf"

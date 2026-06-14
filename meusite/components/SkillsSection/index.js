@@ -15,69 +15,34 @@ import CppLogo from "../../src/assets/cppLogo.svg";
 import NextjsLogo from "../../src/assets/nextjs.svg";
 import GatsbyLogo from "../../src/assets/gatsby.svg";
 import TSLogo from "../../src/assets/typescript.svg";
+import AngularLogo from "../../src/assets/angularLogo.svg";
+import PHPLogo from "../../src/assets/phpLogo.svg";
+import LaravelLogo from "../../src/assets/laravelLogo.svg";
+import DrupalLogo from "../../src/assets/drupalLogo.svg";
+import JestLogo from "../../src/assets/jest.svg";
 import { Element } from "react-scroll";
 
 const skills = [
-  {
-    name: "HTML",
-    icon: HTML5Logo,
-  },
-  {
-    name: "CSS",
-    icon: CSS3Logo,
-  },
-  {
-    name: "Javascript",
-    icon: JSLogo,
-  },
-  {
-    name: "Typescript",
-    icon: TSLogo,
-  },
-  {
-    name: "React",
-    icon: ReactLogo,
-  },
-  {
-    name: "Next.js",
-    icon: NextjsLogo,
-  },
-  {
-    name: "Gatsby",
-    icon: GatsbyLogo,
-  },
-  {
-    name: "styled components",
-    icon: StyledComponentsLogo,
-  },
-  {
-    name: "Material UI",
-    icon: MUILogo,
-  },
-  {
-    name: "Tailwindcss",
-    icon: TailwindLogo,
-  },
-  {
-    name: "Git",
-    icon: GitLogo,
-  },
-  {
-    name: "VS Code",
-    icon: VSCodeLogo,
-  },
-  {
-    name: "Office",
-    icon: OfficeLogo,
-  },
-  {
-    name: "Python",
-    icon: PythonLogo,
-  },
-  {
-    name: "C++",
-    icon: CppLogo,
-  },
+  { name: "PHP", icon: PHPLogo },
+  { name: "Laravel", icon: LaravelLogo },
+  { name: "Angular", icon: AngularLogo },
+  { name: "React", icon: ReactLogo },
+  { name: "Typescript", icon: TSLogo },
+  { name: "Javascript", icon: JSLogo },
+  { name: "Drupal", icon: DrupalLogo },
+  { name: "HTML", icon: HTML5Logo },
+  { name: "CSS", icon: CSS3Logo },
+  { name: "Tailwindcss", icon: TailwindLogo },
+  { name: "Next.js", icon: NextjsLogo },
+  { name: "Jest", icon: JestLogo },
+  { name: "Git", icon: GitLogo },
+  { name: "VS Code", icon: VSCodeLogo },
+  { name: "styled components", icon: StyledComponentsLogo },
+  { name: "Material UI", icon: MUILogo },
+  { name: "Python", icon: PythonLogo },
+  { name: "C++", icon: CppLogo },
+  { name: "Gatsby", icon: GatsbyLogo },
+  { name: "Office", icon: OfficeLogo },
 ];
 
 export default function Skills() {

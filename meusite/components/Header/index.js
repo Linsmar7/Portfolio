@@ -41,7 +41,7 @@ export default function Header() {
         </h2>
         <div className="flex flex-row items-center">
           <a href={t("resumelink")} download>
-            <Button color="purple-300" textColor="white" margin="mr-20">
+            <Button color="purple-300" textColor="white" margin="mr-6">
               {t("resume")}
             </Button>
           </a>

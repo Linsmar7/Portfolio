@@ -2,8 +2,8 @@
   "aboutme": {
     "label": "About Me",
     "question": "Hello World, how can I help you change the world?",
-    "firstp": "I had a great learning experience within the junior IT company at UFBA, the great InfoJr, I fell in love with web programming and went after the news and joy that this world brings every day, I participated in real team projects as a front-end developer and I developed soft-skills in the human resources sector.",
-    "secondp": "I'm currently specializing more in front-end and starting to learn back-end, I like challenges and love to create solutions. I want to bring solutions in an impactful way, so, shall we code?"
+    "firstp": "I had a great learning experience within the junior IT company at UFBA, the great InfoJr, I fell in love with web programming. Today I work as a Fullstack Developer at Chuva Inc., building scalable systems that impact thousands of users in the academic environment.",
+    "secondp": "I mainly work with Angular, React on the front-end and PHP, Laravel and Drupal on the back-end. I have experience with software architecture, optimization and automated testing. I want to bring solutions in an impactful way, so, shall we code?"
   },
   "experience": {
     "label": "Experience",
@@ -12,8 +12,24 @@
       "time": "2019 - on going"
     },
     "infojr": [
-      { "label": "Front-end Developer", "time": "Sep. 2019 - Feb 2022" },
-      { "label": "People Manager", "time": "Dec. 2019 - Agu 2021" }
+      {
+        "label": "Front-end Developer",
+        "time": "Sep. 2019 - Feb 2022"
+      },
+      {
+        "label": "People Manager",
+        "time": "Dec. 2019 - Agu 2021"
+      }
+    ],
+    "chuva": [
+      {
+        "label": "Junior FullStack Developer",
+        "time": "Jun. 2024 - Present"
+      },
+      {
+        "label": "Junior Front-End Developer",
+        "time": "Jun. 2022 - Jun. 2024"
+      }
     ]
   },
   "projects": {
@@ -54,7 +70,7 @@
   "contact": {
     "label": "Contact",
     "h1": "Send me a message!",
-    "p": "I am currently looking for internship or junior level opportunities! If you know of any vacancies, have any questions or just want to talk to me about anything, just send me an email or fill out the form.",
+    "p": "I am currently looking for Mid-level or Junior opportunities! If you know of any vacancies, have any questions or just want to talk to me about anything, just send me an email or fill out the form.",
     "formlabel": "Form:",
     "nameph": "Name",
     "emailph": "Email",
@@ -67,7 +83,7 @@
   },
   "textheader1": "A",
   "textheader2": "student exploring the world of web programming, its technologies and new experiences as a",
-  "span1": "Front-End Developer",
+  "span1": "Full-Stack Developer",
   "span2": "Computer Science",
   "resume": "Resume",
   "resumelink": "/Resume.pdf"
