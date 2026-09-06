@@ -9,7 +9,7 @@
     "label": "Experiência",
     "ufba": {
       "course": "Bacharelado Ciência da Computação",
-      "time": "2019 - Cursando"
+      "time": "2019 - 2026"
     },
     "infojr": [
       {
@@ -86,7 +86,7 @@
     "dialogFail": "Aconteceu algum problema e a mensagem não foi enviada :(",
     "invalidEmail": "Email inválido"
   },
-  "textheader1": "Um estudante de",
+  "textheader1": "Bacharel em",
   "textheader2": "explorando o mundo da programação web, suas tecnologias e novas experiências como",
   "span1": "Desenvolvedor Full-Stack",
   "span2": "Ciência da Computação",

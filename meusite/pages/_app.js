@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
         <title>Linsmar Vital</title>
         <meta
           name="description"
-          content="LINSMAR VITAL. Front-end developer and Computer Science student exploring the world of web development and its technologies and new experiences."
+          content="LINSMAR VITAL. Full-stack developer and Computer Science graduate exploring the world of web development and its technologies and new experiences."
           key="description"
         />
         <meta
@@ -45,7 +45,7 @@ function MyApp({ Component, pageProps }) {
         />
         <meta
           property="og:description"
-          content="LINSMAR VITAL. Front-end developer and Computer Science student exploring the world of web development and its technologies and new experiences."
+          content="LINSMAR VITAL. Full-stack developer and Computer Science graduate exploring the world of web development and its technologies and new experiences."
           key="ogdescription"
         />
         <meta name="theme-color" content="#392259" key="themecolor" />
@@ -57,7 +57,7 @@ function MyApp({ Component, pageProps }) {
         />
         <meta
           name="twitter:description"
-          content="LINSMAR VITAL. Front-end developer and Computer Science student exploring the world of web development and its technologies and new experiences."
+          content="LINSMAR VITAL. Full-stack developer and Computer Science graduate exploring the world of web development and its technologies and new experiences."
           key="twtdescription"
         />
         <meta
