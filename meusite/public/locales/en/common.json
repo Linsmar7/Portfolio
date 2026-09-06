@@ -36,6 +36,11 @@
     "label": "Projects",
     "allProjects": [
       {
+        "name": "RankedLy",
+        "position": "Creator & Full-Stack Developer",
+        "description": "A full-stack platform for curating, ranking, and sharing personalized lists (games, movies, books, and favorites). Features secure authentication via Better-Auth with rate limiting and anti-bot protection, game catalog search integrated with the IGDB API, dynamic cover system with smart 2x2 mosaic, public profiles, and full internationalization (i18n) support."
+      },
+      {
         "name": "Feedback Widget",
         "position": "Front-end, Back-end and Mobile Developer",
         "description": "Learning with the NLW Return (Rocketseat)! Project mobile, front-end and back-end. A feedback widget that print your screen and send the photo and your comment to an email."

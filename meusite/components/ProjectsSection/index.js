@@ -1,6 +1,7 @@
 import React from "react";
 import { Element } from "react-scroll";
 import Project from "./project";
+import RankedLyImg from "../../src/assets/rankedly.png";
 import ParapaisImg from "../../src/assets/parapais.png";
 import ConstrurecImg from "../../src/assets/construrec.webp";
 import SemcompImg from "../../src/assets/semcomp2021.png";
@@ -20,6 +21,9 @@ import HeadlessUILogo from "../../src/assets/headlessui.svg";
 import JestLogo from "../../src/assets/jest.svg";
 import PrismaLogo from "../../src/assets/prisma.svg";
 import TypescriptLogo from "../../src/assets/typescript.svg";
+import PostgreSQLLogo from "../../src/assets/postgresql.svg";
+import DockerLogo from "../../src/assets/docker.svg";
+import ReactRouterLogo from "../../src/assets/reactrouter.svg";
 import { useTranslation } from "react-i18next";
 
 export default function Projects() {
@@ -29,6 +33,23 @@ export default function Projects() {
       name: t("projects.allProjects.0.name"),
       position: t("projects.allProjects.0.position"),
       description: t("projects.allProjects.0.description"),
+      skills: [
+        { src: ReactLogo, title: "React" },
+        { src: TypescriptLogo, title: "Typescript" },
+        { src: TailwindLogo, title: "Tailwindcss" },
+        { src: ReactRouterLogo, title: "React Router" },
+        { src: PostgreSQLLogo, title: "PostgreSQL" },
+        { src: DockerLogo, title: "Docker" },
+        { src: GitLogo, title: "Git" },
+      ],
+      image: RankedLyImg,
+      linkLive: "https://rankedly-gamma.vercel.app",
+      linkRepo: "https://github.com/Linsmar7/ranked-lists",
+    },
+    {
+      name: t("projects.allProjects.1.name"),
+      position: t("projects.allProjects.1.position"),
+      description: t("projects.allProjects.1.description"),
       skills: [
         { src: ReactLogo, title: "React" },
         { src: TypescriptLogo, title: "Typescript" },
@@ -44,9 +65,9 @@ export default function Projects() {
       linkRepo: "https://github.com/Linsmar7/feedback-widget-nlw",
     },
     {
-      name: t("projects.allProjects.1.name"),
-      position: t("projects.allProjects.1.position"),
-      description: t("projects.allProjects.1.description"),
+      name: t("projects.allProjects.2.name"),
+      position: t("projects.allProjects.2.position"),
+      description: t("projects.allProjects.2.description"),
       skills: [
         { src: ReactLogo, title: "React" },
         { src: TailwindLogo, title: "Tailwindcss" },
@@ -57,9 +78,9 @@ export default function Projects() {
       linkRepo: "",
     },
     {
-      name: t("projects.allProjects.2.name"),
-      position: t("projects.allProjects.2.position"),
-      description: t("projects.allProjects.2.description"),
+      name: t("projects.allProjects.3.name"),
+      position: t("projects.allProjects.3.position"),
+      description: t("projects.allProjects.3.description"),
       skills: [
         { src: NextjsLogo, title: "Next.js" },
         { src: TailwindLogo, title: "Tailwindcss" },
@@ -70,9 +91,9 @@ export default function Projects() {
       linkRepo: "https://github.com/Linsmar7/Portfolio",
     },
     {
-      name: t("projects.allProjects.3.name"),
-      position: t("projects.allProjects.3.position"),
-      description: t("projects.allProjects.3.description"),
+      name: t("projects.allProjects.4.name"),
+      position: t("projects.allProjects.4.position"),
+      description: t("projects.allProjects.4.description"),
       skills: [
         { src: NextjsLogo, title: "Next.js" },
         { src: StyledComponentsLogo, title: "Styled Components" },
@@ -84,9 +105,9 @@ export default function Projects() {
       linkRepo: "",
     },
     {
-      name: t("projects.allProjects.4.name"),
-      position: t("projects.allProjects.4.position"),
-      description: t("projects.allProjects.4.description"),
+      name: t("projects.allProjects.5.name"),
+      position: t("projects.allProjects.5.position"),
+      description: t("projects.allProjects.5.description"),
       skills: [
         { src: GatsbyLogo, title: "Gatsby" },
         { src: StyledComponentsLogo, title: "Styled Components" },
@@ -98,9 +119,9 @@ export default function Projects() {
       linkRepo: "",
     },
     {
-      name: t("projects.allProjects.5.name"),
-      position: t("projects.allProjects.5.position"),
-      description: t("projects.allProjects.5.description"),
+      name: t("projects.allProjects.6.name"),
+      position: t("projects.allProjects.6.position"),
+      description: t("projects.allProjects.6.description"),
       skills: [
         { src: JSLogo, title: "Javascript" },
         { src: GitLogo, title: "Git" },
