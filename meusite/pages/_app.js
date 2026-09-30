@@ -1,87 +1,44 @@
-import React from "react";
-import PropTypes from "prop-types";
 import Head from "next/head";
-import "../styles/tailwind.css";
-import { appWithTranslation } from "next-i18next";
 import { ThemeProvider } from "next-themes";
+import { appWithTranslation } from "next-i18next";
+import "../styles/tailwind.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
       <Head>
-        <title>Linsmar Vital</title>
+        <title>Linsmar Vital | Full-Stack Developer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="LINSMAR VITAL. Full-stack developer and Computer Science graduate exploring the world of web development and its technologies and new experiences."
-          key="description"
+          content="Linsmar Vital - Full-Stack Developer & Computer Scientist. Building scalable, modern web applications."
         />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0"
-          key="viewport"
-        />
-
         <meta
           name="keywords"
-          content="Portfolio, Web Development, Reactjs, HTML, CSS, Javascript, Front-end, Website"
-          key="keywords"
+          content="Linsmar Vital, Full-Stack Developer, React, Next.js, TypeScript, Angular, PHP, Laravel, Drupal"
         />
-        <meta name="author" content="Linsmar Vital" key="author" />
-        <meta
-          property="og:title"
-          content="Linsmar - Web Developer Portfolio"
-          key="ogtitle"
-        />
-        <meta property="og:type" content="website" key="ogtype" />
-        <meta
-          property="og:url"
-          content="https://www.linsmarvital.com"
-          key="ogurl"
-        />
-        <meta
-          property="og:image"
-          content="https://i.imgur.com/lfJaes8.png"
-          key="ogimg"
-        />
+        <meta name="author" content="Linsmar Vital" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content="Linsmar Vital | Full-Stack Developer" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.linsmarvital.com" />
+        <meta property="og:image" content="https://i.imgur.com/lfJaes8.png" />
         <meta
           property="og:description"
-          content="LINSMAR VITAL. Full-stack developer and Computer Science graduate exploring the world of web development and its technologies and new experiences."
-          key="ogdescription"
+          content="Full-Stack Developer & Computer Scientist. Building modern web experiences."
         />
-        <meta name="theme-color" content="#392259" key="themecolor" />
-        <meta name="twitter:card" content="summary_large_image" key="twtcard" />
-        <meta
-          name="twitter:title"
-          content="Linsmar - Web Developer Portfolio"
-          key="twttitle"
-        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Linsmar Vital | Full-Stack Developer" />
         <meta
           name="twitter:description"
-          content="LINSMAR VITAL. Full-stack developer and Computer Science graduate exploring the world of web development and its technologies and new experiences."
-          key="twtdescription"
+          content="Full-Stack Developer & Computer Scientist. Building modern web experiences."
         />
-        <meta
-          name="twitter:image:src"
-          content="https://i.imgur.com/lfJaes8.png"
-          key="twtimg"
-        />
-        <meta
-          name="twitter:image:alt"
-          content="Linsmar Vital Picture and description about him"
-          key="twtimgalt"
-        />
-        <meta name="theme-color" content="#392259" />
+        <meta name="twitter:image" content="https://i.imgur.com/lfJaes8.png" />
+        <meta name="theme-color" content="#190F26" />
       </Head>
-      <ThemeProvider attribute="class">
-        <Component {...pageProps} />
-      </ThemeProvider>
-    </>
+      <Component {...pageProps} />
+    </ThemeProvider>
   );
 }
 
 export default appWithTranslation(MyApp);
-
-MyApp.propTypes = {
-  Component: PropTypes.func,
-  pageProps: PropTypes.object,
-};

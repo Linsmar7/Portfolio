@@ -1,41 +1,35 @@
-import React, { useState } from "react";
+import React from "react";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Navbar from "../components/navbar";
-import HamburgerIcon from "../components/navbar/hamburgerIcon";
 import Header from "../components/Header";
 import AboutMe from "../components/AboutMeSection";
 import Skills from "../components/SkillsSection";
 import Experiences from "../components/ExperiencesSection";
 import Projects from "../components/ProjectsSection";
 import Contact from "../components/ContactSection";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Footer from "../components/Footer";
 
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common"])),
+      ...(await serverSideTranslations(locale || "en", ["common"])),
     },
   };
 }
 
-// eslint-disable-next-line react/prop-types
-export default function Home({ locale }) {
-  const [mobile, setMobile] = useState("-translate-x-full");
-  function changeMobileHook() {
-    if (mobile == "-translate-x-full") setMobile("translate-x-0");
-    else setMobile("-translate-x-full");
-  }
+export default function Home() {
   return (
-    <>
-      <Navbar open={mobile} />
-      <HamburgerIcon onClick={() => changeMobileHook()} />
+    <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-[#07030e] text-slate-800 dark:text-slate-100 transition-colors duration-300">
+      <Navbar />
       <Header />
-      <main className="mx-auto max-w-screen-lg flex flex-col">
-        <AboutMe name="aboutme" id="aboutme" />
+      <main className="max-w-5xl mx-auto w-full flex flex-col grow">
+        <AboutMe />
         <Skills />
         <Experiences />
         <Projects />
         <Contact />
       </main>
-    </>
+      <Footer />
+    </div>
   );
 }

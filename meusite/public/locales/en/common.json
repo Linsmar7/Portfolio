@@ -1,9 +1,19 @@
 {
+  "nav": {
+    "menu": "Menu",
+    "language": "Language"
+  },
   "aboutme": {
     "label": "About Me",
     "question": "Hello World, how can I help you change the world?",
     "firstp": "I had a great learning experience within the junior IT company at UFBA, the great InfoJr, I fell in love with web programming. Today I work as a Fullstack Developer at Chuva Inc., building scalable systems that impact thousands of users in the academic environment.",
     "secondp": "I mainly work with Angular, React on the front-end and PHP, Laravel and Drupal on the back-end. I have experience with software architecture, optimization and automated testing. I want to bring solutions in an impactful way, so, shall we code?"
+  },
+  "skills": {
+    "label": "Skills",
+    "frontend": "Frontend",
+    "backend": "Backend & Database",
+    "devops": "DevOps & Tools"
   },
   "experience": {
     "label": "Experience",
@@ -34,58 +44,69 @@
   },
   "projects": {
     "label": "Projects",
-    "allProjects": [
-      {
+    "featured": "Featured Project",
+    "liveDemo": "Live Demo",
+    "sourceCode": "Source Code",
+    "live": "Live",
+    "repo": "Repo",
+    "items": {
+      "rankedly": {
         "name": "RankedLy",
         "position": "Creator & Full-Stack Developer",
         "description": "A full-stack platform for curating, ranking, and sharing personalized lists (games, movies, books, and favorites). Features secure authentication via Better-Auth with rate limiting and anti-bot protection, game catalog search integrated with the IGDB API, dynamic cover system with smart 2x2 mosaic, public profiles, and full internationalization (i18n) support."
       },
-      {
+      "gridvideo": {
+        "name": "GridVideo",
+        "position": "Creator & Front-end Developer",
+        "description": "A lightweight, zero-dependency multi-stream video matrix player built with vanilla JavaScript (ES6+), HTML5, and CSS3. Features simultaneous client-side video playback and sync, individual timeline and volume controls, freeform window-style resizing, playlists, and synthetic feed generators."
+      },
+      "feedbackWidget": {
         "name": "Feedback Widget",
         "position": "Front-end, Back-end and Mobile Developer",
         "description": "Learning with the NLW Return (Rocketseat)! Project mobile, front-end and back-end. A feedback widget that print your screen and send the photo and your comment to an email."
       },
-      {
+      "semcomp2021": {
         "name": "Semcomp 2021",
         "position": "Front-end Developer",
         "description": "Web development of a website for the Computing Week event that is made by InfoJr. (Project made at InfoJr)"
       },
-      {
+      "portfolio": {
         "name": "Portfolio",
         "position": "Creator",
         "description": "Web development of a website to be a portfolio of a web developer."
       },
-      {
+      "parapais": {
         "name": "Parapais",
         "position": "Front-end Developer and Project Manager",
         "description": "Organization, team monitoring and web development of an institutional website and system for the Parapais research group, from the UFBA Institute of Psychology. (Project made at InfoJr)"
       },
-      {
+      "construrec": {
         "name": "Construrec",
         "position": "Front-end Developer",
         "description": "Web development of a professional website for the junior civil engineering company ConstruREC. (Project made at InfoJr)"
       },
-      {
+      "discordBot": {
         "name": "Discord Bot (MiniKrakenBOT)",
         "position": "Creator",
         "description": "A Discord bot with some simple functions made with Discord.js"
       }
-    ]
+    }
   },
   "contact": {
     "label": "Contact",
-    "h1": "Send me a message!",
-    "p": "I am currently looking for Mid-level or Junior opportunities! If you know of any vacancies, have any questions or just want to talk to me about anything, just send me an email or fill out the form.",
-    "formlabel": "Form:",
-    "nameph": "Name",
-    "emailph": "Email",
-    "subjectph": "Subject",
-    "messageph": "Write your message here",
-    "button": "Send",
-    "dialogSucess": "Message sent successfully!",
-    "dialogFail": "There was a problem and the message was not sent :(",
-    "invalidEmail": "Invalid email"
+    "h1": "Get in touch!",
+    "p": "I am currently looking for Mid-level or Junior opportunities! If you know of any vacancies, have any questions or just want to talk to me about anything, feel free to send me an email.",
+    "copyEmail": "Copy email",
+    "copied": "Copied!",
+    "openMail": "Open Mail",
+    "findMeOn": "Or find me on"
   },
+  "footer": {
+    "role": "Full-Stack Developer & Computer Scientist",
+    "rights": "All rights reserved."
+  },
+  "headerBadge": "Full-Stack Developer",
+  "scroll": "Scroll",
   "textheader1": "A",
   "textheader2": "graduate exploring the world of web programming, its technologies and new experiences as a",
   "span1": "Full-Stack Developer",

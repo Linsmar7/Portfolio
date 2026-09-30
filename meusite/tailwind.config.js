@@ -1,34 +1,31 @@
 module.exports = {
-  purge: ["./pages/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}"],
-  darkMode: "class", // or 'media' or 'class'
+  content: [
+    "./pages/**/*.{js,jsx,ts,tsx}",
+    "./components/**/*.{js,jsx,ts,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  darkMode: "class",
   theme: {
-    fontFamily: {
-      sans: ["DM Sans", "sans-serif"],
-      heading: ["DM Sans", "sans-serif"],
-    },
     extend: {
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+      },
       colors: {
         purple: {
-          100: "#D6ACF2",
-          200: "#8850BF",
-          300: "#5A378C",
+          50: "#fbf7ff",
+          100: "#d6acf2",
+          200: "#8850bf",
+          300: "#5a378c",
           400: "#392259",
-          500: "#190F26",
-          600: "#06000a",
+          500: "#190f26",
+          600: "#0f081d",
+          700: "#080411",
         },
       },
       boxShadow: {
-        "3xl": "0 8px 15px rgba(50, 50, 50, 0.7)",
-      },
-      backgroundSize: {
-        underline: "2em",
-        underlineHover: "100%",
+        glow: "0 0 25px -5px rgba(136, 80, 191, 0.45)",
       },
     },
-  },
-  textColor: {},
-  variants: {
-    extend: {},
   },
   plugins: [],
 };

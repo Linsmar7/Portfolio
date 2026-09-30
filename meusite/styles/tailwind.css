@@ -1,145 +1,44 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "Roboto";
-  src: local("Roboto"), url(./../fonts/Roboto/Roboto-Regular.ttf) format("ttf");
-}
 @layer base {
-  body {
-    @apply bg-gray-100 dark:bg-purple-600;
-  }
-}
-@layer utilities {
-  /* underline animation navbar */
-  .bg-growing-underline {
-    background-size: 0 0.1em;
-    background-position: 100% 88%;
-    @apply bg-no-repeat transition-all duration-700;
-  }
-  .bg-growing-underline:hover {
-    background-size: 100% 0.1em;
-    cursor: pointer;
-  }
-  /* typewriter animation headersection */
-  .line {
-    border-right: solid 2px rgba(0, 0, 0, 0.8);
-    white-space: nowrap;
-    overflow: hidden;
-    visibility: hidden;
-    width: 22.5rem;
-    animation: fadeIn 200ms forwards 1s, typewriter 2s steps(60) 1s,
-      cursor 500ms steps(60) 8, hiddenCursor 0s ease-in 4s forwards;
-  }
-  @keyframes typewriter {
-    0% {
-      width: 0;
-    }
-    100% {
-      width: 22.5rem;
-    }
-  }
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      visibility: visible;
-      opacity: 1;
-    }
-  }
-  /* cursor animation headersection*/
-  @keyframes cursor {
-    0% {
-      border-right-color: #5a378c;
-    }
-    100% {
-      border-right-color: transparent;
-    }
-  }
-  /* cursor disappering */
-  @keyframes hiddenCursor {
-    to {
-      border-right-color: transparent;
-    }
-  }
-  .gradient-text {
-    background: linear-gradient(
-      to right,
-      #190f26,
-      #392259,
-      #8850bf,
-      #d6acf2,
-      white,
-      white,
-      white,
-      white,
-      #d6acf2,
-      #8850bf,
-      #392259,
-      #190f26
-    );
-    background-size: 400%;
-    background-clip: text;
-    animation: gradienttext 12s linear infinite;
+  html {
+    scroll-behavior: smooth;
   }
 
-  @keyframes gradienttext {
-    0% {
-      background-position: 0%;
-    }
-    100% {
-      background-position: 400%;
-    }
+  body {
+    @apply bg-slate-50 text-slate-800 dark:bg-[#07030e] dark:text-slate-100 font-sans antialiased selection:bg-purple-300 selection:text-white transition-colors duration-300;
   }
-  .navbar-active {
-    display: none;
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-white/80 dark:bg-purple-600/60 backdrop-blur-md border border-purple-200/50 dark:border-purple-400/30;
   }
-  .navbar-transparent {
-    display: none;
+
+  .glass-nav {
+    @apply bg-white/75 dark:bg-[#07030e]/80 backdrop-blur-lg border-b border-purple-100/50 dark:border-purple-400/20;
   }
-  .navbar-transparent:hover {
-    opacity: 1;
+
+  .gradient-heading {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-300 via-purple-200 to-purple-100;
   }
-  @media (min-width: 1024px) {
-    .navbar-active {
-      display: flex;
-      background: rgba(90, 55, 140);
-      opacity: 1;
-      width: 100%;
-      height: 5rem;
-      color: white;
-      font-size: 1.25rem;
-      line-height: 1.75rem;
-      align-items: center;
-      justify-content: space-evenly;
-      position: fixed;
-      top: 0px;
-      transition-property: opacity;
-      transition-duration: 500ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
-    }
-    .navbar-transparent {
-      background: rgba(90, 55, 140);
-      opacity: 0.7;
-      display: flex;
-      width: 100%;
-      height: 5rem;
-      color: white;
-      font-size: 1.25rem;
-      line-height: 1.75rem;
-      align-items: center;
-      justify-content: space-evenly;
-      position: fixed;
-      top: 0px;
-      transition-property: opacity;
-      transition-duration: 500ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
-    }
+
+  .gradient-border {
+    position: relative;
   }
-  .lang-transition {
-    transition: transform 500ms, visibility 500ms, opacity 400ms;
+  .gradient-border::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, rgba(136, 80, 191, 0.4), rgba(57, 34, 89, 0.1));
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
   }
 }

@@ -1,32 +1,20 @@
 import React from "react";
-import Link from "next/link";
-import PropTypes from "prop-types";
+import { cn } from "../../utils/cn";
 
-export default function GridButton({ color, textColor, icon, link, name }) {
+export default function GridButton({ icon, link, name, className = "" }) {
   return (
-    <Link href={link} title={name}>
-      <a target="_blank" title={name}>
-        <button
-          className={
-            "bg-" +
-            color +
-            " p-2 lg:m-2 border-2 rounded-lg border-transparent text-" +
-            textColor +
-            " tracking-widest transition duration-700 hover:shadow-2xl dark:bg-purple-500 dark:hover:bg-white transform hover:scale-125"
-          }
-          title={name}
-        >
-          {icon}
-        </button>
-      </a>
-    </Link>
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={name}
+      title={name}
+      className={cn(
+        "inline-flex items-center justify-center w-11 h-11 rounded-xl bg-white/70 dark:bg-purple-600/60 border border-purple-200/40 dark:border-purple-400/30 text-purple-300 dark:text-purple-100 hover:text-white hover:bg-purple-300 dark:hover:bg-purple-300 transition-all duration-300 hover:shadow-glow hover:-translate-y-0.5",
+        className
+      )}
+    >
+      {icon}
+    </a>
   );
 }
-
-GridButton.propTypes = {
-  color: PropTypes.string,
-  textColor: PropTypes.string,
-  icon: PropTypes.object,
-  link: PropTypes.string,
-  name: PropTypes.string,
-};

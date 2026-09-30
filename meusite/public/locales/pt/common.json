@@ -1,9 +1,19 @@
 {
+  "nav": {
+    "menu": "Menu",
+    "language": "Idioma"
+  },
   "aboutme": {
     "label": "Sobre mim",
     "question": "Hello World, como posso te ajudar a mudar o mundo?",
     "firstp": "Tive um grande aprendizado dentro da empresa júnior de informática da UFBA, a grande InfoJr, me apaixonei por programação web. Hoje atuo como Desenvolvedor Fullstack na Chuva Inc., construindo sistemas escaláveis que impactam milhares de usuários no ambiente acadêmico.",
     "secondp": "Trabalho principalmente com Angular, React no front-end e PHP, Laravel e Drupal no back-end. Tenho experiência com arquitetura de software, otimização e testes automatizados. Quero trazer soluções de uma forma impactante, e ai, vamos codar?"
+  },
+  "skills": {
+    "label": "Skills",
+    "frontend": "Frontend",
+    "backend": "Backend & Banco de Dados",
+    "devops": "DevOps & Ferramentas"
   },
   "experience": {
     "label": "Experiência",
@@ -34,58 +44,69 @@
   },
   "projects": {
     "label": "Projetos",
-    "allProjects": [
-      {
+    "featured": "Projeto em Destaque",
+    "liveDemo": "Ver Projeto",
+    "sourceCode": "Código Fonte",
+    "live": "Online",
+    "repo": "Repositório",
+    "items": {
+      "rankedly": {
         "name": "RankedLy",
         "position": "Criador e Desenvolvedor Full-Stack",
         "description": "Plataforma full-stack para curadoria, ranqueamento e compartilhamento de listas personalizadas (jogos, filmes, livros e favoritos). Conta com autenticação segura via Better-Auth com rate limiting e proteção anti-bot, integração com a API da IGDB para catálogo de jogos, sistema dinâmico de capas com mosaico inteligente 2x2, perfis públicos e suporte completo a internacionalização (i18n)."
       },
-      {
+      "gridvideo": {
+        "name": "GridVideo",
+        "position": "Criador e Desenvolvedor Front-end",
+        "description": "Reprodutor e matriz de vídeos multi-stream leve e com zero dependências, desenvolvido com JavaScript puro (ES6+), HTML5 e CSS3. Permite reproduzir e sincronizar múltiplos vídeos simultaneamente de forma 100% client-side, com controles individuais de reprodução e volume, redimensionamento livre de janelas, playlists e testes com feeds sintéticos."
+      },
+      "feedbackWidget": {
         "name": "Feedback Widget",
         "position": "Desenvolvedor Front-end, Back-end e Mobile",
         "description": "Aprendendo com o NLW Return (Rocketseat)! Projeto mobile, front-end e back-end. Um widget de feedback que tira um print da sua tela e envia junto com seu comentário para um email."
       },
-      {
+      "semcomp2021": {
         "name": "Semcomp 2021",
         "position": "Desenvolvedor Front-end",
         "description": "Desenvolvimento web de um site para o evento de Semana da Computação que é feito pela InfoJr. (Projeto feito na InfoJr)"
       },
-      {
+      "portfolio": {
         "name": "Portfólio",
         "position": "Criador",
         "description": "Desenvolvimento web de um site para ser um portfólio de um desenvolvedor web."
       },
-      {
+      "parapais": {
         "name": "Parapais",
         "position": "Gerente e Desenvolvedor Front-end",
         "description": "Organização, acompanhamento de equipe e desenvolvimento web de um site institucional e sistema para o grupo de pesquisa Parapais, do Instituto de Psicologia da UFBA. (Projeto feito na InfoJr)"
       },
-      {
+      "construrec": {
         "name": "Construrec",
         "position": "Desenvolvedor Front-end",
         "description": "Desenvolvimento web de um site profissional para a empresa júnior de Engenharia Civil ConstruREC. (Projeto feito na InfoJr)"
       },
-      {
+      "discordBot": {
         "name": "Discord Bot (MiniKrakenBOT)",
         "position": "Criador",
         "description": "Um bot de Discord com algumas funções simples feito com Discord.js"
       }
-    ]
+    }
   },
   "contact": {
     "label": "Contato",
     "h1": "Me mande uma mensagem!",
-    "p": "Estou atualmente em busca de oportunidades como Desenvolvedor Pleno ou Júnior! Se você sabe de alguma vaga, se tem alguma pergunta ou apenas quer falar comigo, basta me mandar um email ou preencher o formulário.",
-    "formlabel": "Formulário:",
-    "nameph": "Nome",
-    "emailph": "E-mail",
-    "subjectph": "Assunto",
-    "messageph": "Escreva sua mensagem aqui",
-    "button": "Enviar",
-    "dialogSucess": "Mensagem enviada com sucesso!",
-    "dialogFail": "Aconteceu algum problema e a mensagem não foi enviada :(",
-    "invalidEmail": "Email inválido"
+    "p": "Estou atualmente em busca de oportunidades como Desenvolvedor Pleno ou Júnior! Se você sabe de alguma vaga, se tem alguma pergunta ou apenas quer falar comigo, fique à vontade para me enviar um email.",
+    "copyEmail": "Copiar email",
+    "copied": "Copiado!",
+    "openMail": "Enviar Email",
+    "findMeOn": "Ou me encontre no"
   },
+  "footer": {
+    "role": "Desenvolvedor Full-Stack & Cientista da Computação",
+    "rights": "Todos os direitos reservados."
+  },
+  "headerBadge": "Desenvolvedor Full-Stack",
+  "scroll": "Rolar",
   "textheader1": "Bacharel em",
   "textheader2": "explorando o mundo da programação web, suas tecnologias e novas experiências como",
   "span1": "Desenvolvedor Full-Stack",
